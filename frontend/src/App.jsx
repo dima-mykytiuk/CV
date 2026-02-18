@@ -66,6 +66,15 @@ function App() {
             🇺🇦
           </button>
         </div>
+
+        <a
+          className="download-btn"
+          href={`./resume-${language}.pdf`}
+          download={`Dmytro_Mykytiuk_CV_${language.toUpperCase()}.pdf`}
+          title={ui.downloadPdf}
+        >
+          ⬇ {ui.downloadPdf}
+        </a>
       </div>
 
       <header className="hero">

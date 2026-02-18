@@ -17,7 +17,8 @@ const resumeData = {
       language: "Language",
       at: "at",
       english: "English",
-      ukrainian: "Ukrainian"
+      ukrainian: "Ukrainian",
+      downloadPdf: "Download PDF"
     },
     uk: {
       contact: "Контакти",
@@ -36,7 +37,8 @@ const resumeData = {
       language: "Мова",
       at: "в",
       english: "Англійська",
-      ukrainian: "Українська"
+      ukrainian: "Українська",
+      downloadPdf: "Завантажити PDF"
     }
   },
   resumes: {

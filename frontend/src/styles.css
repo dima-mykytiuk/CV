@@ -91,6 +91,32 @@ a {
   line-height: 1;
 }
 
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--control-bg);
+  color: var(--text);
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.download-btn:hover {
+  background: var(--control-active-bg);
+  color: var(--control-active-text);
+  transform: translateY(-1px);
+}
+
+.download-btn:active {
+  transform: translateY(0);
+}
+
 .hero {
   text-align: center;
   margin-bottom: 28px;
