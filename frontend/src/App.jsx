@@ -144,7 +144,7 @@ function App() {
           </Section>
 
           <Section title={ui.keyModules}>
-            <ul>
+            <ul className="two-col-list">
               {resume.keyModules.map((mod) => (
                 <li key={mod}>{mod}</li>
               ))}

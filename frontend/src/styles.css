@@ -190,6 +190,11 @@ a {
   gap: 8px;
 }
 
+.two-col-list {
+  columns: 2;
+  column-gap: 24px;
+}
+
 .section p {
   margin: 0;
   line-height: 1.55;
