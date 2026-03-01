@@ -191,6 +191,7 @@ a {
 }
 
 .two-col-list {
+  display: block;
   columns: 2;
   column-gap: 24px;
 }
