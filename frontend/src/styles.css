@@ -191,9 +191,10 @@ a {
 }
 
 .two-col-list {
-  display: block;
-  columns: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   column-gap: 24px;
+  gap: 6px 24px;
 }
 
 .section p {
