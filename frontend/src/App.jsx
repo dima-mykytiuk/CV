@@ -143,6 +143,14 @@ function App() {
             <p>{resume.summary}</p>
           </Section>
 
+          <Section title={ui.keyModules}>
+            <ul>
+              {resume.keyModules.map((mod) => (
+                <li key={mod}>{mod}</li>
+              ))}
+            </ul>
+          </Section>
+
           <Section title={ui.projects}>
             <ul className="details-list">
               {resume.projects.map((project) => (

@@ -7,6 +7,7 @@ const resumeData = {
       personalQualities: "Personal Qualities",
       languages: "Languages",
       summary: "Summary",
+      keyModules: "Key Modules & Business Domains",
       projects: "Projects",
       workHistory: "Work History",
       education: "Education",
@@ -27,6 +28,7 @@ const resumeData = {
       personalQualities: "Особисті якості",
       languages: "Мови",
       summary: "Профіль",
+      keyModules: "Ключові модулі та бізнес-напрямки",
       projects: "Проєкти",
       workHistory: "Досвід роботи",
       education: "Освіта",
@@ -57,6 +59,18 @@ const resumeData = {
       ],
       summary:
         "Python Backend Developer with 2+ years of experience building high-load systems and large-scale integrations. Experienced in FastAPI and RESTful services, designing scalable architectures and asynchronous processing pipelines. Contributed to nationwide logistics and fiscal systems handling high daily throughput.",
+      keyModules: [
+        "Fiscalization (Receipt Processing)",
+        "Payment Orchestration",
+        "OMS (Order Management)",
+        "ERP System Integrations",
+        "WMS (Warehouse Management)",
+        "CRM (Customer Data Management)",
+        "API for Partner Integrations",
+        "High-Volume Transaction Processing",
+        "Asynchronous Event-Driven Processing",
+        "Client Verification"
+      ],
       projects: [
         {
           title: "E-commerce & Order Management Systems",
@@ -146,6 +160,18 @@ const resumeData = {
       ],
       summary:
         "Python Backend-розробник із понад 2 роками досвіду побудови високонавантажених систем і масштабних інтеграцій. Маю досвід із FastAPI та RESTful сервісами, проєктуванням масштабованих архітектур і асинхронних конвеєрів обробки. Брав участь у розвитку національних логістичних і фіскальних систем із великим щоденним навантаженням.",
+      keyModules: [
+        "Фіскалізація (обробка чеків)",
+        "Платіжна оркестрація",
+        "OMS (управління замовленнями)",
+        "Інтеграції з ERP-системами",
+        "WMS (складський облік)",
+        "CRM (управління клієнтськими даними)",
+        "API для партнерських інтеграцій",
+        "Обробка великих масивів транзакцій",
+        "Асинхронна event-driven обробка",
+        "Верифікація клієнтів"
+      ],
       projects: [
         {
           title: "Системи e-commerce та управління замовленнями",
