@@ -70,7 +70,7 @@ function App() {
         <a
           className="download-btn"
           href={`./resume-${language}.pdf`}
-          download={`Dmytro_Mykytiuk_CV_${language.toUpperCase()}.pdf`}
+          download={language === "uk" ? "Дмитро_Микитюк_CV_UK.pdf" : "Dmytro_Mykytiuk_CV_EN.pdf"}
           title={ui.downloadPdf}
         >
           ⬇ {ui.downloadPdf}
