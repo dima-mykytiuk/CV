@@ -10,8 +10,43 @@ function Section({ title, children }) {
   );
 }
 
+function CertificateModal({ url, onClose, ui }) {
+  useEffect(() => {
+    const handleKey = (e) => {
+      if (e.key === "Escape") onClose();
+    };
+    document.addEventListener("keydown", handleKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", handleKey);
+      document.body.style.overflow = "";
+    };
+  }, [onClose]);
+
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <div className="modal-header">
+          <a
+            className="modal-download-btn"
+            href={url}
+            download
+          >
+            {ui.downloadCertificate}
+          </a>
+          <button className="modal-close-btn" onClick={onClose}>
+            {ui.closeCertificate}
+          </button>
+        </div>
+        <iframe className="modal-iframe" src={url} title="Certificate" />
+      </div>
+    </div>
+  );
+}
+
 function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "light");
+  const [certificateUrl, setCertificateUrl] = useState(null);
   const [language, setLanguage] = useState(() => {
     const savedLanguage = localStorage.getItem("language");
     return savedLanguage === "uk" ? "uk" : "en";
@@ -184,17 +219,36 @@ function App() {
           </Section>
 
           <Section title={ui.courses}>
-            {resume.courses.map((course) => (
-              <article key={`${course.title}-${course.period}`} className="timeline-item">
-                <h3>
-                  {course.title}, {course.provider}
-                </h3>
-                <p className="muted">{course.period}</p>
-              </article>
-            ))}
+            <div className="courses-grid">
+              {resume.courses.map((course) => (
+                <article key={`${course.title}-${course.period}`} className="course-card">
+                  <h3>
+                    {course.title}, {course.provider}
+                  </h3>
+                  <p className="muted">{course.period}</p>
+                  {course.certificateUrl && (
+                    <button
+                      type="button"
+                      className="cert-btn"
+                      onClick={() => setCertificateUrl(course.certificateUrl)}
+                    >
+                      {ui.viewCertificate}
+                    </button>
+                  )}
+                </article>
+              ))}
+            </div>
           </Section>
         </section>
       </main>
+
+      {certificateUrl && (
+        <CertificateModal
+          url={certificateUrl}
+          onClose={() => setCertificateUrl(null)}
+          ui={ui}
+        />
+      )}
     </div>
   );
 }

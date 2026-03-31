@@ -12,6 +12,9 @@ const resumeData = {
       workHistory: "Work History",
       education: "Education",
       courses: "Courses",
+      viewCertificate: "View Certificate",
+      closeCertificate: "Close",
+      downloadCertificate: "Download",
       theme: "Theme",
       light: "Light",
       dark: "Dark",
@@ -33,6 +36,9 @@ const resumeData = {
       workHistory: "Досвід роботи",
       education: "Освіта",
       courses: "Курси",
+      viewCertificate: "Переглянути сертифікат",
+      closeCertificate: "Закрити",
+      downloadCertificate: "Завантажити",
       theme: "Тема",
       light: "Світла",
       dark: "Темна",
@@ -119,12 +125,20 @@ const resumeData = {
         {
           title: "Python Web and Data Science",
           provider: "GoIT",
-          period: "Aug 2021 — Oct 2022"
+          period: "Aug 2021 — Oct 2022",
+          certificateUrl: "./Dmytro Mykytiuk Python.pdf"
         },
         {
           title: "Fullstack Developer",
           provider: "GoIT",
-          period: "Mar 2023 — Dec 2023"
+          period: "Mar 2023 — Dec 2023",
+          certificateUrl: "./Dmytro Mykytiuk Full_Stack.pdf"
+        },
+        {
+          title: "AI-agents Pro",
+          provider: "Fwdays Academy",
+          period: "Mar 2026",
+          certificateUrl: "./Dmytro Mykytiuk dwdays_AI PRO.pdf"
         }
       ],
       skills: [
@@ -220,12 +234,20 @@ const resumeData = {
         {
           title: "Python Web та Data Science",
           provider: "GoIT",
-          period: "Сер 2021 — Жов 2022"
+          period: "Сер 2021 — Жов 2022",
+          certificateUrl: "./Dmytro Mykytiuk Python.pdf"
         },
         {
           title: "Fullstack Developer",
           provider: "GoIT",
-          period: "Бер 2023 — Гру 2023"
+          period: "Бер 2023 — Гру 2023",
+          certificateUrl: "./Dmytro Mykytiuk Full_Stack.pdf"
+        },
+        {
+          title: "AI-agents Pro",
+          provider: "Fwdays Academy",
+          period: "Бер 2026",
+          certificateUrl: "./Dmytro Mykytiuk dwdays_AI PRO.pdf"
         }
       ],
       skills: [
